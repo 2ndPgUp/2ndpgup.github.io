@@ -1,0 +1,188 @@
+@font-face {
+    font-family: Poppins;
+    src: url("font/Poppins-Regular.ttf") format("truetype");
+}
+
+*{
+    font-family: Poppins;
+}
+
+body{
+    background: #f7f6ee;
+}
+
+.nav-link{
+    margin-right: 24px;
+}
+
+.active{
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    font-weight: 600;
+}
+
+.jumbotron{
+    height: 600px;
+    background: linear-gradient(to top, #194973, #476d8f);
+    color: white;
+    padding-top: 200px;
+    position: relative;
+    z-index: -2;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.hero-home{
+    background: url(img/jumbotron-home.jpg);
+    background-size: cover;
+}
+
+.hero-wave{
+    height: 60%;
+    padding-bottom: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.header-row{
+    font-weight: bold;
+    height: 50px;
+}
+
+.header-row::after{
+    content: '';
+    display: block;
+    width: 60px;
+    margin: auto;
+    padding-top: 10px;
+    border-bottom: 4px solid #6da0fd;
+}
+
+.keunggulan{
+    padding: 8px 80px;
+}
+
+.card{
+    padding: 24px 32px;
+    border-radius: 10px;
+}
+
+.card-keunggulan{
+    height: 370px;
+}
+
+.card-title{
+    font-weight: bold;
+    margin-top: 16px;
+    font-size: 18px;
+    height:64px;
+} 
+
+.card-text{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.pendaftaran{
+    width: 100%;
+    height: fit-content;
+    background: #C7C2F9;
+}
+
+.pendaftaran img{
+    padding: 16px;
+}
+
+.btn{
+    padding: 8px 32px;
+}
+
+.btn-primary{
+    background: #194973;
+    border: 0;
+}
+
+.btn-secondary{
+    background: #FFDC61;
+    border: 0;
+}
+
+footer{
+    background: linear-gradient(to top right, #194973, #61adc4);
+    color: #e1e1e1;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+.jurusan img{
+    border-radius: 32px;
+}
+
+.prestasi::after{
+    content: '';
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    border-bottom: 1px solid #C7C2F9;
+}
+
+.prestasi h3{
+    line-height: 130%;
+    letter-spacing: -0.5px;
+}
+
+
+@media(max-width:576px){
+.jumbotron{
+    height: 400px;
+    padding-top: 150px;
+}
+
+.prestasi{
+    width: 100%;
+}
+
+.keunggulan{
+    padding: 8px 16px;
+}
+
+.card-keunggulan{
+    height: auto;
+}
+
+.pendaftaran{
+    padding: 0 16px;
+}
+
+.pendaftaran .btn{
+    width: 100%;
+}
+
+.alumni{
+    margin: 0 16px;
+}
+
+.profil{
+    margin: 0 16px;
+}
+
+.jurusan{
+    margin-right: 10px;
+}
+
+.jurusan img{
+    border-radius: 16px;
+}
+
+}
